@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SNB Ascend Architecture Consultancy</title>
+  <meta name="description" content="SNB Ascend Architecture Consultancy: architectural design, sustainable building solutions, and interior architecture.">
+  <style>
+    :root {
+      --navy: #0F172A;
+      --slate: #64748B;
+      --light: #F8FAFC;
+      --white: #FFFFFF;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--navy);
+      background: var(--white);
+      line-height: 1.6;
+    }
+    a { color: var(--navy); }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      background: var(--white);
+      border-bottom: 1px solid #e2e8f0;
+      z-index: 10;
+    }
+    .nav {
+      max-width: 1100px;
+      margin: auto;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .logo { font-weight: bold; font-size: 20px; letter-spacing: 1px; text-decoration: none; }
+    .logo span { display: block; font-size: 10px; letter-spacing: 3px; color: var(--slate); font-weight: normal; }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--slate);
+      font-size: 15px;
+    }
+    nav a:hover { color: var(--navy); }
+
+    /* Hero */
+    .hero {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 110px 20px;
+    }
+    .hero h1 { font-size: 42px; letter-spacing: 1px; margin-bottom: 14px; }
+    .hero p { font-size: 18px; color: #cbd5e1; max-width: 620px; margin: auto; }
+    .btn {
+      display: inline-block;
+      margin-top: 28px;
+      background: var(--white);
+      color: var(--navy);
+      padding: 12px 28px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    /* Sections */
+    section { padding: 70px 20px; }
+    .container { max-width: 1100px; margin: auto; }
+    .light { background: var(--light); }
+    h2 {
+      font-size: 30px;
+      margin-bottom: 18px;
+      letter-spacing: 0.5px;
+    }
+    .subtitle { color: var(--slate); margin-bottom: 30px; }
+
+    /* Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: var(--white);
+      padding: 28px;
+      border-left: 4px solid var(--slate);
+    }
+    .card h3 { margin-bottom: 10px; font-size: 18px; }
+    .card p { color: var(--slate); font-size: 15px; }
+
+    /* Projects */
+    .project {
+      background: #e2e8f0;
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--slate);
+      font-size: 14px;
+      /* Replace with: background-image: url('your-photo.jpg'); background-size: cover; */
+    }
+    .project-info { padding: 16px 0; }
+    .project-info h3 { font-size: 17px; }
+    .project-info p { color: var(--slate); font-size: 14px; }
+
+    /* Contact */
+    .contact-details p { margin-bottom: 10px; color: var(--slate); }
+    .contact-details strong { color: var(--navy); }
+
+    footer {
+      background: var(--navy);
+      color: #cbd5e1;
+      text-align: center;
+      padding: 28px 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 30px; }
+      nav a { margin-left: 14px; font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav">
+      <a href="#home" class="logo">SNB ASCEND<span>ARCHITECTURE CONSULTANCY</span></a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <h1>Elevating Built Environments</h1>
+    <p>Innovative and sustainable architectural design that harmonizes form, function, and long-term value.</p>
+    <a href="#contact" class="btn">Book a Consultation</a>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p class="subtitle">Architecture rooted in precision, purpose, and sustainability.</p>
+      <p>SNB Ascend Architecture Consultancy transforms visionary concepts into built realities. We combine aesthetic excellence with technical precision to create spaces that inspire, function efficiently, and respect the environment. Every project receives personal attention from concept to completion.</p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="light" id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <p class="subtitle">End-to-end architectural solutions for residential and commercial clients.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Architectural Design</h3>
+          <p>Concept development, planning, and detailed design tailored to your vision.</p>
+        </div>
+        <div class="card">
+          <h3>Sustainable Solutions</h3>
+          <p>Energy-efficient, environmentally responsible building strategies.</p>
+        </div>
+        <div class="card">
+          <h3>Interior Architecture</h3>
+          <p>Functional, elegant interiors that complement the building's structure.</p>
+        </div>
+        <div class="card">
+          <h3>Renovation & Adaptive Reuse</h3>
+          <p>Giving existing structures new life with modern function and style.</p>
+        </div>
+        <div class="card">
+          <h3>3D Visualization & BIM</h3>
+          <p>Realistic renders and coordinated digital models before construction begins.</p>
+        </div>
+        <div class="card">
+          <h3>Project Management</h3>
+          <p>Coordination, documentation, and on-time delivery from start to finish.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <h2>Selected Projects</h2>
+      <p class="subtitle">A selection of recent and conceptual work.</p>
+      <div class="grid">
+        <!-- Project 1 -->
+        <div>
+          <div class="project">Project Image 1</div>
+          <div class="project-info">
+            <h3>Modern Residence</h3>
+            <p>Residential · Location · 2026</p>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div>
+          <div class="project">Project Image 2</div>
+          <div class="project-info">
+            <h3>Commercial Office</h3>
+            <p>Commercial · Location · 2026</p>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div>
+          <div class="project">Project Image 3</div>
+          <div class="project-info">
+            <h3>Heritage Renovation</h3>
+            <p>Renovation · Location · 2026</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="light" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p class="subtitle">Let's discuss your next architectural project.</p>
+      <div class="contact-details">
+        <p><strong>Email:</strong> snbascend@gmail.com</p>
+        <p><strong>Phone:</strong> [Your Phone Number]</p>
+        <p><strong>Address:</strong> [Your Address, City, Country]</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 SNB Ascend Architecture Consultancy. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
